@@ -1,2 +1,28 @@
-# TheStandard
-QG studio front-end group development specification documents repository
+
+# QG工作室前端组开发规范（待补充）
+#### 分包规则
+1. 大致按css, js, html, images分类，以后再有其他类型再分
+2. 分包里面可以再分包，根据实际情况来定
+3. 文件名字要按照功能起
+4. 文件命名要语义化
+
+#### 头部
+1. lang = zh-cmn-Hans
+#### html
+1. 按钮用button标签
+2. 大结构用id，内容可用class
+3. class和id明明要按规范且语义化
+4. ```<label for="input的id"></label>```来关联文字和input元素
+#### css
+1. 每个模块用```/**模块名**/```与```/**结束模块**/```包起来，模块里面每个属性的css都缩进
+2. 模块里面再分模块则可注释```/***子模块名***/```与```/***子模块结束***/```
+3. 模块内容注释在后面加就行
+4. 缩进4个空格
+5. rgba用小写
+6. 变量名后面加引号不需要空格，引号后面才需要空格
+7. 可统一还原默认样式，参考css reset：Normalize.css
+#### js
+1. html里面的属性建议用双引号，js里面的用单引号
+2. 注释用/**+回车
+3. js会以来jq，jq要放前面，引用的文件顺序要自己规定好
+4. 引外部文件不用加type 
